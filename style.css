@@ -107,6 +107,8 @@ main {
     margin-bottom: 20px;
 }
 
+
+/* Responsiveness */
 @media screen and (min-width:500px) and (max-width: 800px) {
     /* Styling Page */
     body {
