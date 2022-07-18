@@ -1,0 +1,253 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+/* Styling Page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', sans-serif;
+    color: #eee;
+    background-color: #222;
+}
+
+/* Styling Header Section */
+header {
+    position: relative;
+    height: 35vh;
+    border-bottom: 7px solid #eee;
+}
+
+.box1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.btn {
+    background-color: #eee;
+    color: #222;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: inherit;
+    padding: 20px 30px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ccc;
+}
+
+.between {
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.number {
+    width: 150px;
+    background: #eee;
+    color: #333;
+    font-size: 60px;
+    padding: 30px 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+} 
+
+/* Styling Main Section */
+main {
+    height: 65vh;
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left {
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right {
+    width: 520px;
+    font-size: 20px;
+}
+
+.guess {
+    width: 250px;
+    background: transparent;
+    color: inherit;
+    border: 4px solid #eee;
+    font-size: 50px;
+    font-family: inherit;
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.message {
+    margin-bottom: 80px;
+    height: 30px;
+}
+
+.label-score {
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width:500px) and (max-width: 800px) {
+    /* Styling Page */
+    body {
+        width: 100%;
+    }
+
+    /* Styling Header Section */
+    header {
+        height: 40vh;
+    }
+
+    .box1 {
+        padding-bottom: 30px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .between {
+        font-size: 11.2px;
+    }
+
+    h1 {
+        font-size: 32px;
+        line-height: 50px;
+        padding: 0 20px;
+    }
+
+    .number {
+        width: 120px;
+        font-size: 48px;
+        padding: 24px 0;
+    }
+
+    /* Styling Main Section */
+    main {
+        flex-direction: column;
+        margin-top: 86px;
+    }
+
+    .left {
+        width: 416px;
+    }
+
+    .right {
+        width: 416px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .guess {
+        width: 200px;
+        font-size: 40px;
+        padding: 20px;
+        margin-bottom: 24px;
+    }
+
+    .message {
+        margin-bottom: 64px;
+    }
+  
+    .label-highscore {
+        margin-bottom: 30px;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    /* Styling Page */
+    body {
+        width: initial;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Styling Header Section */
+    header {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .box1 {
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .between {
+        font-size: 11.2px;
+        margin-top: 30px;
+    }
+
+    h1 {
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .number {
+        width: 120px;
+        font-size: 48px;
+        padding: 24px 0;
+    }
+
+    /* Styling Main Section */
+    main {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .right {
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .left {
+        width: 100%;
+    }
+    .guess {
+        width: 200px;
+        font-size: 40px;
+        padding: 20px;
+        margin-bottom: 24px;
+    }
+
+    .message {
+        margin-bottom: 64px;
+    }
+  
+    .label-highscore {
+        margin-bottom: 30px;
+    }
+
+}
